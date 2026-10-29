@@ -18,4 +18,4 @@ spec:
   values:
     image:
       repository: ghcr.io/gabrielegallenti/lab01-app
-      tag: "9cb25790564a94726ef64e97a24d49db02d74187"
+      tag: "8b2f97af57c8a33c8c46510717a81770274389a7"
