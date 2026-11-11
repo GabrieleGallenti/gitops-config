@@ -16,6 +16,7 @@ spec:
         name: flux-system
         namespace: flux-system
   values:
+    dbSecret: db
     image:
       repository: ghcr.io/gabrielegallenti/lab01-app
       tag: "9cb25790564a94726ef64e97a24d49db02d74187"
