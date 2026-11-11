@@ -7,7 +7,7 @@ spec:
   decryption:
     provider: sops
     secretRef:
-      name: sops-gpg
+      name: sops-age
   interval: 5m
   sourceRef:
     kind: GitRepository
