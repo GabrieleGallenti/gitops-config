@@ -5,3 +5,7 @@ resources:
   - namespace.yaml
   - helmrepository.yaml
   - helmrelease.yaml
+  - ../../base/api
+  - secret.enc.yaml
+  - servicemonitor.yaml
+  - netpol.yaml

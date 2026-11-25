@@ -1,12 +1,15 @@
-# templates/service.yaml
 apiVersion: v1
 kind: Service
 metadata:
   name: {{ .Release.Name }}
+  labels:
+    app.kubernetes.io/name: api
+    app.kubernetes.io/instance: {{ .Release.Name }}
 spec:
   selector:
     app.kubernetes.io/name: api
     app.kubernetes.io/instance: {{ .Release.Name }}
   ports:
-    - port: {{ .Values.service.port }}
+    - name: http
+      port: {{ .Values.service.port }}
       targetPort: http
