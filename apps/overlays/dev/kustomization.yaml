@@ -4,6 +4,7 @@ resources:
   - ../../base/api
   - secret.enc.yaml
   - servicemonitor.yaml
+  - netpol.yaml
 patches:
   - target:
       kind: HelmRelease
