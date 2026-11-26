@@ -5,6 +5,7 @@ resources:
   - secret.enc.yaml
   - servicemonitor.yaml
   - netpol.yaml
+  - prometheusrule.yaml
 patches:
   - target:
       kind: HelmRelease

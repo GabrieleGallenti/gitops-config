@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: api-alerts
+  namespace: dev
+spec:
+  groups:
+    - name: api
+      rules:
+        - alert: ApiHighErrorRate
+          expr: |
+            sum(rate(http_requests_total{namespace="dev",status="5xx"}[2m]))
+              / sum(rate(http_requests_total{namespace="dev"}[2m])) > 0.05
+          for: 2m
+          labels:
+            severity: critical
+          annotations:
+            summary: "Oltre il 5% di risposte 5xx sull'API"

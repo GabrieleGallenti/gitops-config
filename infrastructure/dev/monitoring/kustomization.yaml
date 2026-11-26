@@ -9,3 +9,4 @@ resources:
   - secret.enc.yaml
   - servicemonitor.yaml
   - netpol.yaml
+#commonLabels:
