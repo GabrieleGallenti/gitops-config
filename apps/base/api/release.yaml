@@ -19,4 +19,4 @@ spec:
     dbSecret: db
     image:
       repository: ghcr.io/gabrielegallenti/lab01-app
-      tag: "709e912149e090a045f81b94cdf4f16504f74e8a"
+      tag: "dccc6b31f11bda5616bd767e6b56657763fe3653"
